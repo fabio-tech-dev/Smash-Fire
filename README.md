@@ -47,10 +47,3 @@ Quase tudo fica no **início do arquivo `js/script.js`** (seções 1, 2 e 3, mar
 As fotos de demonstração vêm do Unsplash e precisam de internet. Se alguma não carregar, o site mostra
 `assets/images/placeholder.svg`. Para o cliente real, coloque as fotos em `assets/images/` (ideal: JPG ou WebP,
 cerca de 600px de largura, abaixo de 100 KB cada) e troque o campo `image`.
-
-## Publicação
-
-O projeto pode ser publicado na Vercel conectado ao repositório do GitHub. Como é um site estático
-em HTML, CSS e JavaScript, não precisa de etapa de build nem configuração especial.
-
-Depois de publicar, gere o QR Code com o link final e imprima para as mesas, o balcão e a bio do Instagram.
