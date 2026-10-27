@@ -48,16 +48,9 @@ As fotos de demonstração vêm do Unsplash e precisam de internet. Se alguma n�
 `assets/images/placeholder.svg`. Para o cliente real, coloque as fotos em `assets/images/` (ideal: JPG ou WebP,
 cerca de 600px de largura, abaixo de 100 KB cada) e troque o campo `image`.
 
-## Rodar no VS Code (Live Server)
-1. Abra a pasta do projeto no VS Code (**File → Open Folder**).
-2. Instale a extensão **Live Server** (Ritwick Dey).
-3. Clique com o botão direito em `index.html` → **Open with Live Server**.
+## Publicação
 
-Para testar no celular, deixe o PC e o celular no mesmo Wi-Fi e abra o endereço de rede que o Live Server mostra.
-
-## Publicar
-- **Netlify:** entre em app.netlify.com/drop e arraste a pasta inteira.
-- **Vercel:** suba a pasta para o GitHub, em vercel.com clique em *Add New → Project*, escolha o repositório e *Deploy* (sem configurar nada).
-- **GitHub Pages:** suba para um repositório → *Settings → Pages* → Branch `main`, pasta `/ (root)`.
+O projeto pode ser publicado na Vercel conectado ao repositório do GitHub. Como é um site estático
+em HTML, CSS e JavaScript, não precisa de etapa de build nem configuração especial.
 
 Depois de publicar, gere o QR Code com o link final e imprima para as mesas, o balcão e a bio do Instagram.
