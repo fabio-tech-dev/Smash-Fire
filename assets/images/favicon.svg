@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect width="48" height="48" rx="12" fill="#FFC400"/>
+  <path d="M10 22c0-7.5 6-12 14-12s14 4.5 14 12z" fill="#0B0B0B"/>
+  <ellipse cx="18" cy="16.5" rx="1.5" ry=".8" fill="#FFC400" transform="rotate(-20 18 16.5)"/>
+  <ellipse cx="24" cy="14" rx="1.5" ry=".8" fill="#FFC400"/>
+  <ellipse cx="30" cy="16.5" rx="1.5" ry=".8" fill="#FFC400" transform="rotate(20 30 16.5)"/>
+  <polyline points="9,26 14,28.5 19,26 24,28.5 29,26 34,28.5 39,26" fill="none" stroke="#0B0B0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="9" y="31" width="30" height="4.5" rx="2.25" fill="#0B0B0B"/>
+  <path d="M10 38h28c0 3-2.5 4.5-5.5 4.5h-17C12.5 42.5 10 41 10 38z" fill="#0B0B0B"/>
+</svg>

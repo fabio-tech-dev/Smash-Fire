@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- SEO: troque título, descrição e imagem para cada cliente -->
+  <title>Smash Fire | Cardápio Digital</title>
+  <meta name="description" content="Cardápio digital da Smash Fire: smash burgers feitos na hora, porções, pizzas, combos, bebidas e sobremesas. Confira preços, ingredientes, horários e endereço.">
+  <meta name="theme-color" content="#0b0b0b">
+
+  <!-- Open Graph (pré-visualização ao compartilhar no WhatsApp/Instagram) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Smash Fire | Cardápio Digital">
+  <meta property="og:description" content="Smash burgers feitos na hora. Veja o cardápio completo, preços e horários.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=70">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Ícone da marca (desenhado em SVG, sem direitos autorais). Reutilizado com <use>. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="icon-logo" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="12" fill="#FFC400"/>
+      <path d="M10 22c0-7.5 6-12 14-12s14 4.5 14 12z" fill="#0B0B0B"/>
+      <ellipse cx="18" cy="16.5" rx="1.5" ry=".8" fill="#FFC400" transform="rotate(-20 18 16.5)"/>
+      <ellipse cx="24" cy="14" rx="1.5" ry=".8" fill="#FFC400"/>
+      <ellipse cx="30" cy="16.5" rx="1.5" ry=".8" fill="#FFC400" transform="rotate(20 30 16.5)"/>
+      <polyline points="9,26 14,28.5 19,26 24,28.5 29,26 34,28.5 39,26" fill="none" stroke="#0B0B0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="9" y="31" width="30" height="4.5" rx="2.25" fill="#0B0B0B"/>
+      <path d="M10 38h28c0 3-2.5 4.5-5.5 4.5h-17C12.5 42.5 10 41 10 38z" fill="#0B0B0B"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <svg class="brand__icon" aria-hidden="true"><use href="#icon-logo"/></svg>
+        <span class="brand__text">
+          <span class="brand__name" data-brand-name>Smash <em>Fire</em></span>
+          <span class="brand__tag" data-tagline>Burgers feitos na hora</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-menu" id="main-menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#promocoes">Promoções</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+          <li><a href="#" data-instagram target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="#" data-whatsapp target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <!-- FOTO DO TOPO: troque o src (e remova o srcset) pela foto real do cliente -->
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=70"
+             srcset="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=640&q=70 640w,
+                     https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=70 1200w,
+                     https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1800&q=70 1800w"
+             sizes="100vw"
+             alt="Smash burger com queijo derretido" width="1200" height="800"
+             fetchpriority="high" decoding="async" data-fallback="hide">
+      </div>
+
+      <div class="hero__badge" aria-hidden="true"><strong>100%</strong><span>feito na hora</span></div>
+
+      <div class="container hero__content">
+        <p class="eyebrow">Smash burgers artesanais</p>
+        <h1 id="hero-title" class="hero__title">Sabor de verdade.<span>Feito na hora.</span></h1>
+        <p class="hero__text">Smash burgers preparados na hora, ingredientes selecionados e combinações feitas para quem realmente gosta de burger.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#cardapio">Ver cardápio</a>
+          <a class="btn btn--ghost" href="#promocoes">Ver promoções</a>
+        </div>
+
+        <p class="status" id="status" aria-live="polite">
+          <span class="status__dot" aria-hidden="true"></span>
+          <strong id="status-text">Verificando...</strong>
+          <span class="status__hours" id="status-hours"></span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CARDÁPIO (categorias + destaques + produtos) ============ -->
+    <section class="menu-zone" id="cardapio" aria-label="Cardápio">
+
+      <nav class="cats" aria-label="Categorias do cardápio">
+        <div class="container">
+          <ul class="cats__list" id="cats-list"></ul>
+        </div>
+      </nav>
+
+      <section class="section featured" aria-labelledby="featured-title">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Os queridinhos da casa</p>
+            <h2 id="featured-title" class="section-title">🔥 Mais pedidos</h2>
+          </div>
+          <div class="featured__track" id="featured-list"></div>
+        </div>
+      </section>
+
+      <div class="container menu-list" id="menu-list">
+        <noscript><p class="noscript">Ative o JavaScript para ver o cardápio.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ============ PROMOÇÃO ============ -->
+    <section class="section promo" id="promocoes" aria-labelledby="promo-title">
+      <div class="container">
+        <article class="promo__card reveal">
+          <div class="promo__text">
+            <span class="promo__tag" id="promo-tag">🔥 Oferta da semana</span>
+            <h2 class="promo__title" id="promo-title">Double Smash + Batata + Refrigerante</h2>
+            <p class="promo__desc" id="promo-desc"></p>
+            <strong class="promo__price" id="promo-price">R$ 39,90</strong>
+          </div>
+          <img class="promo__img" id="promo-img" src="assets/images/placeholder.svg" alt="" width="640" height="440" loading="lazy" decoding="async" data-fallback>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section about" id="sobre" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Quem somos</p>
+          <h2 id="about-title" class="section-title">Nossa história</h2>
+        </div>
+        <p class="about__text reveal">Mais que hambúrguer, entregamos uma experiência. Trabalhamos com ingredientes selecionados, carnes preparadas diariamente e receitas criadas para quem realmente gosta de burger.</p>
+        <ul class="about__list reveal">
+          <li>🥩 Carne preparada todo dia</li>
+          <li>🧀 Ingredientes selecionados</li>
+          <li>🔥 Chapa bem quente</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ LOCALIZAÇÃO + HORÁRIOS ============ -->
+    <section class="section info" id="localizacao" aria-label="Localização e horários">
+      <div class="container info__grid">
+        <article class="info-card reveal">
+          <h2 class="info-card__title">📍 Onde estamos</h2>
+          <address class="info-card__address" data-address>Rua Exemplo, 123<br>Centro<br>Cidade - MG</address>
+          <a class="btn btn--primary btn--block" href="#" data-maps target="_blank" rel="noopener noreferrer">Abrir no Maps</a>
+        </article>
+
+        <article class="info-card reveal" id="horarios">
+          <h2 class="info-card__title">🕒 Horários</h2>
+          <ul class="hours" id="hours-list"></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ INSTAGRAM + WHATSAPP (contato) ============ -->
+    <section class="section social" aria-label="Redes e contato">
+      <div class="container social__grid">
+        <article class="social-card reveal">
+          <h2 class="social-card__title">Siga a gente</h2>
+          <p>Novidades, promoções e bastidores da chapa no nosso Instagram.</p>
+          <a class="btn btn--primary btn--block" href="#" data-instagram target="_blank" rel="noopener noreferrer">📸 Ver Instagram</a>
+        </article>
+
+        <article class="social-card reveal">
+          <h2 class="social-card__title">💬 Fale conosco</h2>
+          <p>Ficou com alguma dúvida? Chame a gente no WhatsApp.</p>
+          <a class="btn btn--whatsapp btn--block" href="#" data-whatsapp target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#inicio" aria-label="Voltar ao topo">
+          <svg class="brand__icon" aria-hidden="true"><use href="#icon-logo"/></svg>
+          <span class="brand__text">
+            <span class="brand__name" data-brand-name>Smash <em>Fire</em></span>
+            <span class="brand__tag" data-tagline>Burgers feitos na hora</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="footer__col">
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="#" data-instagram target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="#" data-whatsapp target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Endereço</h3>
+        <address data-address>Rua Exemplo, 123<br>Centro<br>Cidade - MG</address>
+        <a class="footer__link" href="#" data-maps target="_blank" rel="noopener noreferrer">Abrir no Maps</a>
+      </div>
+
+      <div class="footer__col">
+        <h3>Horário</h3>
+        <p data-today-hours>—</p>
+        <a class="footer__link" href="#horarios">Ver todos os horários</a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> <span data-restaurant-name>Smash Fire</span>. Todos os direitos reservados.</p>
+      <p class="footer__dev">Desenvolvido por <a href="#" data-developer target="_blank" rel="noopener noreferrer">Oreia Tech</a></p>
+    </div>
+  </footer>
+
+  <!-- ============ BOTÃO FLUTUANTE DO WHATSAPP (somente contato) ============ -->
+  <a class="wa-float" href="#" data-whatsapp target="_blank" rel="noopener noreferrer" aria-label="Falar com a gente no WhatsApp">
+    <span aria-hidden="true">💬</span>
+  </a>
+
+</body>
+</html>
